@@ -1,4 +1,5 @@
 import pygame, sys
+
 pygame.init()
 # Screen
 size = width, height = 1024, 600
@@ -25,9 +26,6 @@ score_p1 = 0
 score_p2 = 0
 score_win = 5
 winner = ''
-
-
-
 
 while True:
     for event in pygame.event.get():
@@ -97,7 +95,4 @@ while True:
         screen.blit(text_winner, (post_text_winner_x, post_text_winner_y))
         pos_ball_x, pos_ball_y = 0,0
 
-
-
     pygame.display.flip()
-
